@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* .canva{
+    background: white;
+    position: absolute;
+    top: 0;
+} */
+.cont {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 10vh;
+    position: sticky;
+    z-index: 10;
+}
+
+.bttn {
+    background-color: transparent;
+    border: 0px;
+    color: white;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: larger;
+    padding: 5px;
+    /* border-radius: 5px; */
+    /* border: 2px dotted white; */
+}
+
+.bttn:hover {
+    /* border-top: 2px solid white; */
+    border-bottom: 2px solid white;
+    /* transition: all 500ms; */
+}
+
+#mercury:hover {
+    color: silver;
+    border-color: silver;
+}
+
+#venus:hover {
+    color: darkorange;
+    border-color: darkorange;
+}
+
+#earth:hover {
+    color: deepskyblue;
+    border-color: deepskyblue;
+}
+
+#mars:hover {
+    color: crimson;
+    border-color: crimson;
+}
+
+#jupiter:hover {
+    color: peachpuff;
+    border-color: peachpuff;
+}
+
+#saturn:hover {
+    color: cornsilk;
+    border-color: cornsilk;
+}
+
+#uranus:hover {
+    color: rgb(90, 180, 184);
+    border-color: rgb(90, 180, 184);
+}
+
+#neptune:hover {
+    color: mediumblue;
+    border-color: mediumblue;
+}
+
+#pluto:hover {
+    color: grey;
+    border-color: grey;
+}
+
+.info {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 30vh; */
+    /* width: 10vw; */
+    position: absolute;
+    z-index: 10;
+    /* border: 2px solid wheat; */
+    bottom: 1vh;
+    left: 1vw;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 425px) {
+    .cont{
+        height: 20vh;
+    }
+    .info{
+        font-size: 30px;
+    }
+}
