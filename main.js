@@ -97,7 +97,8 @@ btn1.addEventListener('click', () => {
 		},
 		// called while loading is progressing
 		function (xhr) {
-
+			var info = document.getElementById('info')
+			info.innerText = 'loading ...'
 			console.log((xhr.loaded / xhr.total * 100) + '% loaded');
 
 		},
