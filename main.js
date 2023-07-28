@@ -78,6 +78,7 @@ btn1.addEventListener('click', () => {
 	// const mercurydat = await import('./planetconfig/mercury.json')
 	var info = document.getElementById('info')
 	info.innerText = 'loading ...'
+	console.log(info.innerText)
 	console.log('clicked')
 	scene.clear()
 	loader.load(
