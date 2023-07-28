@@ -81,6 +81,8 @@ btn1.addEventListener('click', () => {
 	loader.load(
 		// resource URL
 		mercury,
+		var info = document.getElementById('info')
+		info.innerText = 'loading ...'
 		// called when the resource is loaded
 		function (gltf) {
 
@@ -97,8 +99,7 @@ btn1.addEventListener('click', () => {
 		},
 		// called while loading is progressing
 		function (xhr) {
-			var info = document.getElementById('info')
-			info.innerText = 'loading ...'
+			
 			console.log((xhr.loaded / xhr.total * 100) + '% loaded');
 
 		},
