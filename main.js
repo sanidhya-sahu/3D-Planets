@@ -76,6 +76,8 @@ const btn1 = document.getElementById('mercury')
 btn1.addEventListener('click', () => {
 	// path='./Assets/mars/scene.gltf'
 	// const mercurydat = await import('./planetconfig/mercury.json')
+	var info = document.getElementById('info')
+	info.innerText = 'loading ...'
 	console.log('clicked')
 	scene.clear()
 	loader.load(
