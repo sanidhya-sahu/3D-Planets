@@ -81,8 +81,7 @@ btn1.addEventListener('click', () => {
 	loader.load(
 		// resource URL
 		mercury,
-		var info = document.getElementById('info')
-		info.innerText = 'loading ...'
+		
 		// called when the resource is loaded
 		function (gltf) {
 
